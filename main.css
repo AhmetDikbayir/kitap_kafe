@@ -1,0 +1,67 @@
+/* 
+.caroseul-img{
+    width:600px;
+    height: 600px;
+    object-fit: fill;
+}
+*/
+.item-img{
+    width: 400px;
+    height: 400px;
+    object-fit: fill;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.explanation{
+    width: auto;
+    height: auto;
+    text-align: justify;
+}
+
+ul.menu>li.nav-item>a{
+    display: block;
+}
+
+ul.menu>li.nav-item {
+    float: left;
+    position: relative;
+    line-height: 50px;
+}
+
+ul.menu ul{
+    background-color: #6096B4;
+    width: 150px;
+    position: absolute;
+    /*Buradaki top değeri aşağıdaki hover kısmında değişecek.*/
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 250ms all;
+}
+
+ul.menu ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu li a:hover{
+    opacity: .6;
+    color: aliceblue;
+}
+
+ul.menu >li:hover ul{
+    /*Burada top değeri 50 ye çıkartıyoruz ki aşağıya doğru açılıyor gibi görünsün*/
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+ul.menu ul li a:hover{
+    opacity: 0.8;
+    color: white;
+    transition: 250ms all;
+}
